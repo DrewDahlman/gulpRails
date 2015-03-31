@@ -23,13 +23,7 @@ It will look something like this:
 //= require ./templates.js
 </pre>
 
-What is happening above is that we are including our scripts similar to writing out 
-
-<code>
-	<script src='../app/jQuery.js'></script>
-	<script src='../app/modernizr.js'></script>
-	<script src='../app/app.js'></script>
-</code>
+This is exactly like you would normally include scripts.
 
 The order that they are in the manifest file is the order they will be in your application.
 
