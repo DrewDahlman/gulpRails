@@ -4,7 +4,7 @@
   "description": "gulpRails",
   "repository": {
     "type": "git",
-    "url": "git@github.com:legworkstudio/LB-BrandOfYou.git"
+    "url": "git@github.com:drewdahlman/gulpRails.git"
   },
   "browser": {
     "plugin": "./app/assets/javascripts/vendor/jquery-plugin.js"
