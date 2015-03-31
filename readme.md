@@ -25,11 +25,11 @@ It will look something like this:
 
 What is happening above is that we are including our scripts similar to writing out 
 
-<pre>
+<code>
 	<script src='../app/jQuery.js'></script>
 	<script src='../app/modernizr.js'></script>
 	<script src='../app/app.js'></script>
-</pre>
+</code>
 
 The order that they are in the manifest file is the order they will be in your application.
 
