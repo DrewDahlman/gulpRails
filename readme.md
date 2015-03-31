@@ -36,10 +36,24 @@ The order that they are in the manifest file is the order they will be in your a
 We are using bower for dependency management, you can easily add new dependencies there rather than using the rails gem system, BUT you are also able to still use the classic gem system if you really need to. just add the require to the statement in the manifest file.
 
 ## How to use
+To use simply copy the contents of the `package` directory into your application root and run:
+ - `npm install`
+ - `bower install`
+ - `gulp`
+ - you're ready to go!
+
+## Example
 If you CD into the example you can run:
  - `npm install`
  - `bower install`
  - `gulp`
 
 You will see that your app copies all changes made to `frontend` into the `app/assets` directory.
+
+If you want to run the full app run:
+ - `vagrant up`
+ - `vagrant reload`
+ - go to http://192.168.56.102
+
+The example uses the [Vagrant + Puppet Boilerplate project](https://github.com/DrewDahlman/vagrant-puppet-boilerplate)
 
