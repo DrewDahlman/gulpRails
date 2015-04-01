@@ -51,3 +51,9 @@ If you want to run the full app run:
 
 The example uses the [Vagrant + Puppet Boilerplate project](https://github.com/DrewDahlman/vagrant-puppet-boilerplate)
 
+## Wins
+ - Get to use bower for dependency management
+ - CoffeScript linting and error catching
+ - Sass Error catching
+ - Get to use Browserfy ( export and require )
+ - Can still use gems for dependencies
