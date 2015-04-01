@@ -2,7 +2,7 @@
 Enhancing the Rails Asset Pipeline using Gulp.
 
 ## Why
-The Rails asset pipeline is a great way of delivering assets to your application, dealing with minifying and concatenation of your JS and CSS, but it can be a process to use such neat tools such as browserfy, auto prefixer and such.
+The Rails asset pipeline is a great way of delivering assets to your application, dealing with minifying and concatenation of your JS and CSS, but it can be a process to use such neat tools such as browserify, auto prefixer and other great features of a proper build system.
 
 The project is intended to not replace the pipeline, but rather enhance it using a build system, in our case Gulp.
 
@@ -55,7 +55,7 @@ The example uses the [Vagrant + Puppet Boilerplate project](https://github.com/D
  - Get to use bower for dependency management
  - CoffeScript linting and error catching
  - Sass Error catching
- - Get to use Browserfy ( export and require )
+ - Get to use Browserify ( export and require )
  - Can still use gems for dependencies
  - You can modify your build process to suit your needs
  	- Some projects have special requirements for compiling, with a build system such as gulp you have full control over how that process happens.
