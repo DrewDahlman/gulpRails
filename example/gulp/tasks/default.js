@@ -13,6 +13,7 @@
 var gulp = require('gulp');
 
 gulp.task('default', [
+	'clean',
 	'templates',
 	'scripts',
 	'manifests',
