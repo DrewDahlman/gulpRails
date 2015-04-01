@@ -42,6 +42,8 @@ If you CD into the example you can run:
  - `bower install`
  - `gulp`
 
+The example project is a straight up barebones rails 4.2.1 app. Nothing has been modified only dropping in the gulp packages on the root.
+
 You will see that your app copies all changes made to `frontend` into the `app/assets` directory.
 
 If you want to run the full app run:
