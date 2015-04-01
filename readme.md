@@ -2,7 +2,7 @@
 Enhancing the Rails Asset Pipeline using Gulp.
 
 ## Why
-The Rails asset pipeline is a great way of delivering assets to your application, dealing with minifying and concatenation your JS and CSS, but it can be a process to use such neat tools such as browserfy, auto prefixer and such.
+The Rails asset pipeline is a great way of delivering assets to your application, dealing with minifying and concatenation of your JS and CSS, but it can be a process to use such neat tools such as browserfy, auto prefixer and such.
 
 The project is intended to not replace the pipeline, but rather enhance it using a build system, in our case Gulp.
 
