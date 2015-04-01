@@ -7,10 +7,7 @@
  |_|  |_|\__,_|_| |_|_|_| \___||___/\__|___/
                                                     
 
- Compile all CoffeeScript in the ./src directory, bundle it and save a
- non-minified version for the local webserver to ./public/js.
-
- No sourcemaps here (yet).
+Manage dependencies and script loads via manifests
 
 */
 
