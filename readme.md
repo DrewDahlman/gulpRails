@@ -57,3 +57,5 @@ The example uses the [Vagrant + Puppet Boilerplate project](https://github.com/D
  - Sass Error catching
  - Get to use Browserfy ( export and require )
  - Can still use gems for dependencies
+ - You can modify your build process to suit your needs
+ 	- Some projects have special requirements for compiling, with a build system such as gulp you have full control over how that process happens.
