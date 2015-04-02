@@ -12,12 +12,6 @@
 
 var gulp = require('gulp');
 
-gulp.task('default', [
-	'clean',
-	'templates',
-	'scripts',
-	'manifests',
-	'styles',
-	'images',
-	'watch'
-	], function(){});
+gulp.task('default', ['clean'], function(){
+  gulp.start('build');
+});

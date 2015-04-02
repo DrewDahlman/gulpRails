@@ -13,10 +13,11 @@ var gulp  = require('gulp'),
 
 gulp.task('clean', function() {
   return gulp.src([
-	  	'!./app/assets/javascripts/vendor/',
-	  	'./app/assets/javascripts/*.js.erb',
-	  	'./app/assets/javascripts/*.js',
-      './app/assets/images/**/*'
-  	], {read: false})
+      '!./app/assets/javascripts/vendor/',
+      './app/assets/javascripts/*.js.erb',
+      './app/assets/javascripts/*.js',
+      './app/assets/images/**/*',
+      './app/assets/stylesheets/app.css'
+    ], {read: false})
     .pipe(clean({force: true}));
 });
