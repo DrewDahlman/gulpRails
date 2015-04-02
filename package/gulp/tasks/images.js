@@ -16,6 +16,6 @@ var gulp = require('gulp'),
     config = require('../config');
 
 gulp.task('images', function() {
-  gulp.src('./fontend/images/**/*')
+  gulp.src('./frontend/images/**/*')
   	.pipe(gulp.dest('./app/assets/images/'));
 });
