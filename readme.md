@@ -61,3 +61,23 @@ The example uses the [Vagrant + Puppet Boilerplate project](https://github.com/D
  - Can still use gems for dependencies
  - You can modify your build process to suit your needs
  	- Some projects have special requirements for compiling, with a build system such as gulp you have full control over how that process happens.
+
+## To ignore or not to ignore?
+When working on a team you may find that you get conflicts between your compiled files such as app.js & app.css. Getting around this is easy and in fact there are two very viable options.
+
+ - .gitignore
+ 	- You can set `.gitignore` to ignore everything inside of `app/assets/` this will mean that your compiled scripts will never actually leave your machine, and that you will never have any issues with conflicts.
+ 	- Doing this method will mean that your server will need to run gulp and do the build for you which is also very easy to setup.
+ 	- ssh into your server and install `node`, `npm` & `gulp` as global
+ 	- In your deployment run `gulp dist` and gulp will build your files for you on the server and you're good to go!
+
+ - Binary
+ 	- This is also a very easy thing to do
+ 	- in your `.gitignore` add the following
+ 
+ <pre>
+ 	app/assets/stylesheets/app.css binary
+ 	app/assets/javascripts/app.js binary
+ </pre>
+
+ 	- By setting your files to binary they will not be diffed and you can continue deving without worry of weird conflicts!
