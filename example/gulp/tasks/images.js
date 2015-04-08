@@ -17,5 +17,5 @@ var gulp = require('gulp'),
 
 gulp.task('images', function() {
   gulp.src('./frontend/images/**/*')
-  	.pipe(gulp.dest('./app/assets/images/'));
+    .pipe(gulp.dest('./app/assets/images/'));
 });

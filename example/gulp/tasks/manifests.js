@@ -1,14 +1,13 @@
 /*
-  ___         _      _      
- / __| __ _ _(_)_ __| |_ ___
- \__ \/ _| '_| | '_ \  _(_-<
- |___/\__|_| |_| .__/\__/__/
-               |_|          
+  __  __             _  __          _       
+ |  \/  |           (_)/ _|        | |      
+ | \  / | __ _ _ __  _| |_ ___  ___| |_ ___ 
+ | |\/| |/ _` | '_ \| |  _/ _ \/ __| __/ __|
+ | |  | | (_| | | | | | ||  __/\__ \ |_\__ \
+ |_|  |_|\__,_|_| |_|_|_| \___||___/\__|___/
+                                                    
 
- Compile all CoffeeScript in the ./src directory, bundle it and save a
- non-minified version for the local webserver to ./public/js.
-
- No sourcemaps here (yet).
+Manage dependencies and script loads via manifests
 
 */
 
@@ -17,9 +16,12 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream');
 
 gulp.task('manifests', function() {
-  gulp.src([
-    './frontend/javascripts/manifests/*'
-    ])
-    .pipe(gulp.dest('./app/assets/javascripts/'));
 
+  // JS Manifest
+  gulp.src('./frontend/javascripts/manifests/application.js')
+    .pipe(gulp.dest('./app/assets/javascripts/'));
+  
+  // CSS Manifest
+  gulp.src('./frontend/styles/manifests/application.css')
+    .pipe(gulp.dest('./app/assets/stylesheets/'));
 });

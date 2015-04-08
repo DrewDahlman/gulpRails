@@ -16,9 +16,12 @@ var gulp = require('gulp'),
     source = require('vinyl-source-stream');
 
 gulp.task('manifests', function() {
-  gulp.src([
-    './frontend/javascripts/manifests/*'
-    ])
-    .pipe(gulp.dest('./app/assets/javascripts/'));
 
+  // JS Manifest
+  gulp.src('./frontend/javascripts/manifests/application.js')
+    .pipe(gulp.dest('./app/assets/javascripts/'));
+  
+  // CSS Manifest
+  gulp.src('./frontend/styles/manifests/application.css')
+    .pipe(gulp.dest('./app/assets/stylesheets/'));
 });
